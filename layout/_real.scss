@@ -1,0 +1,44 @@
+
+
+
+.real--element{
+  position:relative;
+  text-align: center;
+  color:red;
+
+    
+
+    h4{
+        color:grey;
+        text-align: center;
+        }
+    
+     .img_real{
+        width: 100%;
+        display: block;
+        margin:0.6vh auto 4vh;
+        border:1px solid $color4;
+        // filter: brightness(80%);
+
+        @include md {
+          width: 90%;
+        }
+      }  
+
+      .texte_centrer{
+        position:absolute;
+        bottom:5%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        color:$color2;
+        font-family: Avenir,Helvetica,Arial,sans-serif;
+        font-size: 4.5vw;
+
+        @include md {
+          font-size: 16px;
+          bottom:15%;
+        }
+      }
+}
+

@@ -1,0 +1,23 @@
+.bgc_centres{
+    h3, p{
+        color:$color1;
+    }
+
+    background-image:url('assets/img/img_bande2.png');
+    // filter: brightness(30%);
+    color:black;
+        background-size:cover;
+        margin:0;
+        background-repeat: no-repeat;
+        background-attachment: inherit; 
+        width:100%;
+}
+
+
+.centres--element{
+    margin:0 0 2rem;
+
+    .sous_unity{
+        text-align: center;
+    }
+  }

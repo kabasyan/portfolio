@@ -1,0 +1,164 @@
+
+body{
+    @include md{
+        overflow-x: hidden;
+     }
+}
+
+ 
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh;
+    padding-right: 1rem;
+    // background-color:#687791;
+    background-color: transparent;
+
+    font-size: 0.9rem; /*taille de font pour les appareils mobiles d etype smartphone*/
+    // /* font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; */
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1;
+}
+
+
+
+
+.nav-links{
+        border:1px solid gray;
+        position: absolute;
+        right:1.2rem;
+        height:88.7vh;
+        top:8vh;
+        // background-color:#687791;
+        background-color:#fff;
+        opacity:1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+        padding-top: 8vh;
+
+        //320px extra small devices 
+        @include xs{
+            width: 55%;
+            padding-top: 5vh;
+         }
+
+         //375px small devices
+         @include s{
+            width: 50%;
+            padding-top: 12vh;
+         }
+
+         //414px small-medium devices
+         @include sm{
+            width: 55%;
+            padding-top: 11vh;
+         }
+
+         //768px Medium devices
+        @include md{
+            width: 30%;
+            padding-top: 7vh;
+         }
+
+         //1024px Extra large devices
+         @include xl{
+            width: 25%;
+            padding-top: 5vh;
+         }
+
+
+        a{
+            text-decoration: none;
+            letter-spacing: 3px;
+            // color:#fff;
+            color:gray;
+            // font-weight: bold;
+            // font-size: 14px;
+
+            @include xs{
+                font-size: 0.8rem;
+             }
+
+             @include sm{
+                font-size: 1rem;
+             }
+
+            @include md{
+                font-size: 0.8rem;
+             }
+
+
+             @include xl{
+                font-size: 1rem;
+             }
+        } 
+
+    
+        li{
+            list-style: none;
+            opacity:0;
+            text-align: center;
+            margin: 1rem 2rem;
+            @include xs{
+                margin: 0.8rem 2rem;
+             }
+
+            @include md{
+                margin: 1rem 2rem;
+             }
+            
+            
+        }
+
+    }
+
+
+    .nav-active{
+        
+         transform: translateX(0%);
+        
+    }
+
+  
+
+
+
+    .burger{
+            display: block;
+            cursor: pointer;
+            border: 1px solid gray;
+            margin: 1.1rem 0.2rem;
+
+        
+
+
+        .line{
+        width: 25px;
+        height:2px;
+        background-color:gray;
+        margin:5px 
+            }
+    }
+
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translate(50px);
+        }
+        to {
+            opacity:1;
+            transform: translateX(0px);
+        }
+
+    }

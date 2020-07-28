@@ -1,0 +1,156 @@
+header{
+  padding:0.8rem;
+
+  @include xl{
+    padding:0.6rem;
+  }
+
+
+  .header_container{ 
+    height: 96vh;
+    background-color:$color1;
+    border:1px solid white;
+
+    @include md{
+      height: 97vh;
+    }
+    @include xl{
+      height: 97vh;
+    }
+
+
+    .header_box_border{
+      border:1px solid white;
+      margin:5.5rem auto;
+      width: 16rem;
+
+      @include md{
+        width: 24rem;
+      }
+
+    @include xl{
+      width: 24rem;
+      margin:5rem auto;
+    }
+      
+
+    .header_box{
+      background-color: #fff;
+      text-align: center;
+      width: 15rem;
+      margin:0.5rem auto;
+      padding:2rem 0;
+      @include md{
+        width: 23rem;
+        padding:3rem 0;
+      }
+      @include xl{
+        width: 23rem;
+        padding:3rem 0;
+      }
+
+      h2{
+        text-align: center;
+        font-weight : 400;
+        font-size: 0.5rem;
+        color: $color3;
+        @include md{
+          font-size: 1rem;
+        }
+        @include xl{
+          font-size: 1rem;
+        }
+      }
+
+      h1{
+            text-align: center;
+            font-weight : 400;
+            font-size: 1rem;
+            @include md{
+              font-size: 1.7rem;
+            }
+            @include xl{
+              font-size: 1.5rem;
+            }
+      }
+
+
+    }
+  }
+
+  .bouton{
+    width:16rem;
+    border:1px solid #FFF;
+    color:#FFF;
+    text-align: center;
+    margin:1.3vh auto;
+    padding:0.5vh 0;
+
+    @include md{
+      width:16rem;
+    }
+    @include xl{
+      width:16rem;
+    }
+
+    &:hover{
+      border:1px solid #FFF;
+      color:#FFF;
+      background-color: #FFF;
+    }
+  }
+  
+  
+  .first{
+    margin-top: 16rem;
+    @include s{
+      margin-top: 22rem;
+    }
+
+    @include sm{
+      margin-top: 26rem;
+    }
+
+    @include md{
+      margin-top: 25rem;
+    }
+
+    @include lg{
+      margin-top: 15rem;
+    }
+
+
+    @include xl{
+      margin-top: 16rem;
+    }
+    &:hover{
+      color:#000;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    
+  }
+  
+
+
+
+       background-image:url('assets/img/wall.jpg');
+        background-size:cover;
+        margin:0;
+        background-repeat: no-repeat;
+        background-attachment: inherit; 
+      
+
+        @include md{
+          background-image:url('assets/img/768.png');
+        }
+        
+        @include xl{
+          background-image:url('assets/img/1024.png');
+
+        } 
+       }
+      }
+  
